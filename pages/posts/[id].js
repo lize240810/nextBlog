@@ -20,18 +20,29 @@ export async function getStaticPaths() {
     return {
         paths,
         fallback: false
+        //     fallback: 'blocking', // 或 true/false
     }
 }
 
-
+// SSG 构建时预生成所有HTML，作为静态文件托管	
 // export async function getServerSideProps({ params }) {
 export async function getStaticProps({ params }) {
     console.log("params", params.id)
     const postData = await getPostData(params.id)
+
+
+    // 注意：notFound: true即使之前已成功生成页面，该页面仍会返回 404 错误。这是为了支持用户生成的内容被作者删除等用例。
+    if (!postData) {
+        return {
+            notFound: true,
+        }
+    }
+
     return {
         props: {
             postData
-        }
+        },
+        // revalidate: 60, // 可选：开启 ISR，60秒后重新生成页面
     }
 }
 
