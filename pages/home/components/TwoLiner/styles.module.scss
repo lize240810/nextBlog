@@ -1,0 +1,59 @@
+
+/* 小屏幕 */
+@media (max-width: 576px) {
+  .container {
+    flex-direction: column;
+
+    .left {
+    }
+
+    .right {
+      margin-left: 0;
+      align-items: center;
+      display: block;
+
+      div {
+        margin-left: 0;
+
+      }
+    }
+  }
+}
+
+/* 中等屏幕 */
+@media (min-width: 576px) and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+
+    .left {
+    }
+
+    .right {
+      margin-left: 0;
+      align-items: center;
+      display: block;
+
+      div {
+        margin-left: 0;
+
+      }
+    }
+  }
+}
+
+/* 大屏幕 */
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 2rem;
+
+    .left {
+      //flex: 2;
+    }
+
+    .right {
+      //flex: 3;
+      //margin-left: 0;
+      //align-items: center;
+    }
+  }
+}

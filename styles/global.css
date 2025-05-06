@@ -20,19 +20,6 @@ body {
     sans-serif;
 }
 
-a {
-  color: #a3e4f4;
-  text-decoration: none;
-}
-a:hover {
-  color: #f4a3e4;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
+.title-color{
+  color: #373763;
 }
