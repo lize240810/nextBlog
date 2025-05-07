@@ -1,4 +1,4 @@
-import Layout from '../../components/Layout/Layout';
+import Layout from '../../components/Layout/layout'
 import TwoLiner from './components/TwoLiner/twoLiner';
 import styles from './styles.module.scss';
 import How from "./components/How/how";
