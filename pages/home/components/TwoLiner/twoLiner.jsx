@@ -4,17 +4,19 @@ export default function TwoLiner() {
     return (
         <section>
             <div className="mx-auto">
-                <p className="text-2xl font-bold md:text-5xl mb-4 title-color tracking-wider">
+
+                <div className="text-2xl font-bold md:text-5xl mb-4 title-color tracking-wider flex outfit-900">
+                    <div className={styles.Myliner} />
                     Two Liner / Introduction Page
-                </p>
+                </div>
             </div>
 
             <div className={`${styles.container} flex gap-10`}>
                 <div className={`${styles.left}  flex-1 mb-4 pr-2`}>
-                    <p className="text-xl mb-4 title-color font-bold">
+                    <p className="text-xl mb-4 title-color font-bold outfit-800">
                         No one starts a business to run accounting. That's where we come in.
                     </p>
-                    <p className="text-md text-gray-600 tracking-wider word-spacing-widest leading-loose">
+                    <p className="text-md text-gray-600 tracking-wider word-spacing-widest leading-loose outfit-400">
                         MultiFi is the All-In-One Corporate Finance Platform built for growth.
                         We're powered by autonomous AI employees that get things done beyond
                         finance operations, bookkeeping, taxes, and financial reporting.

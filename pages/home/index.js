@@ -12,7 +12,7 @@ export default function Home() {
                 <div className="mt-40">
                     <How/>
                 </div>
-                <img src="/images/background.svg" alt="Clara" className={styles.background} />
+                <img src="/images/background.svg" alt="Clara" className={`${styles.background} z-0`} />
                 <div className="mt-40">
                     <AIAssistant/>
                 </div>

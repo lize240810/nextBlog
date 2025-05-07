@@ -1,12 +1,11 @@
 @import "tailwindcss";
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family:
-    Inter,
+    padding: 0;
+    margin: 0;
+    font-family: Inter,
     -apple-system,
     BlinkMacSystemFont,
     Segoe UI,
@@ -20,6 +19,96 @@ body {
     sans-serif;
 }
 
-.title-color{
-  color: #373763;
+.outfit-100 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.outfit-200 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.outfit-300 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.outfit-400 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.outfit-500 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.outfit-600 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.outfit-700 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.outfit-800 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.outfit-900 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.title-color {
+    color: #373763;
+}
+
+.colorful-title {
+    background: linear-gradient(94deg, #1A2164 3.7%, #D85CDD 99.28%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.colorful-title-2 {
+    background: linear-gradient(89deg, #0F59AD 39.75%, #96019C 53.88%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.myUnderline {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #0769dd;
+        content: " ";
+        bottom: 0;
+    }
 }
