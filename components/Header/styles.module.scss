@@ -1,8 +1,8 @@
 .container {
   background-image: url("/images/bg-header.svg");
-  //background-size: contain;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: top;
 }
 
 /* 小屏幕 */
@@ -47,24 +47,27 @@
   .container {
     height: 400px;
     padding: 30px;
+    background-image: url("/images/bg-header.svg");
+    background-size: 100%;
+    background-position: top;
 
     .logo {
       top: 40px;
-      font-size: 5.5rem;
+      font-size: 3rem;
       transform: translateX(-2%);
 
       span {
-        color: #fff;
+        //color: #fff;
       }
 
       img {
-        width: 8rem;
+        width: 4rem;
       }
     }
 
     .headerText {
-      bottom: 30%;
-      font-size: 2rem;
+      margin-top: 20px;
+      font-size: 1.5rem;
 
       div {
         width: 100%;
