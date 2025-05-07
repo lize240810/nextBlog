@@ -9,11 +9,11 @@ export default function Home() {
         <Layout>
             <section className={`${styles.container} relative`}>
                 <TwoLiner/>
-                <div className="mt-40">
+                <div className="mt-40 z-1 relative">
                     <How/>
                 </div>
                 <img src="/images/background.svg" alt="Clara" className={`${styles.background} z-0`} />
-                <div className="mt-40">
+                <div className="mt-40 z-1 relative">
                     <AIAssistant/>
                 </div>
             </section>
